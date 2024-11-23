@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#E5E9F0] text-[#333333] font-sans;
+  }
+}
+
+@layer components {
+  .forum-link {
+    @apply text-[#006699] hover:underline cursor-pointer;
+  }
+  
+  .forum-table {
+    @apply w-full border-collapse overflow-hidden;
+  }
+  
+  .forum-table th {
+    @apply bg-[#006699] text-white font-normal p-2 text-left;
+  }
+  
+  .forum-table td {
+    @apply p-2 border-t border-[#A9B8C2];
+  }
+  
+  .forum-row {
+    @apply hover:bg-[#F5F7FA];
+  }
+  
+  .forum-icon {
+    @apply w-8 h-8 flex items-center justify-center;
+  }
+  
+  .forum-stats {
+    @apply text-xs text-gray-600;
+  }
+  
+  .forum-lastpost {
+    @apply text-xs text-gray-600;
+  }
+
+  .classic-nav-item {
+    @apply flex items-center justify-center w-24 h-24 flex-col text-center hover:opacity-90;
+  }
+
+  .classic-nav-icon {
+    @apply w-12 h-12 mb-2 text-[#006699];
+  }
+
+  .classic-header {
+    background: linear-gradient(180deg, #FFFFFF 0%, #E5E9F0 100%);
+    border-bottom: 1px solid #A9B8C2;
+  }
+
+  .classic-nav {
+    background: linear-gradient(180deg, #D1D7E2 0%, #FFFFFF 100%);
+    border-bottom: 1px solid #A9B8C2;
+  }
+
+  .forum-header {
+    background: linear-gradient(180deg, #1E4262 0%, #006699 100%);
+    @apply text-white p-3 flex justify-between items-center rounded-t-lg;
+  }
+
+  .forum-category {
+    background: linear-gradient(180deg, #D1D7E2 0%, #C2CCD8 100%);
+    @apply text-[#333333] p-2 font-bold border-b border-[#A9B8C2];
+  }
+
+  .forum-button {
+    background: linear-gradient(180deg, #006699 0%, #005588 100%);
+    @apply text-white px-3 py-1 text-sm rounded hover:brightness-110 transition-all;
+  }
+
+  .forum-input {
+    @apply border border-[#A9B8C2] rounded px-2 py-1 text-sm focus:outline-none focus:border-[#006699];
+  }
+
+  .forum-section {
+    @apply bg-white border border-[#A9B8C2] mb-4 rounded-lg overflow-hidden;
+  }
+
+  .forum-online-box {
+    @apply bg-white border border-[#A9B8C2] p-3 text-xs rounded-lg;
+  }
+}
